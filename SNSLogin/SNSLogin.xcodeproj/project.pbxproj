@@ -17,6 +17,10 @@
 		76C64F482B26EFFE000E0108 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 76C64F472B26EFFE000E0108 /* RxCocoa */; };
 		76C64F4A2B26EFFE000E0108 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 76C64F492B26EFFE000E0108 /* RxRelay */; };
 		76C64F4C2B26EFFE000E0108 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 76C64F4B2B26EFFE000E0108 /* RxSwift */; };
+		76C64F4E2B26F0C7000E0108 /* SNSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F4D2B26F0C7000E0108 /* SNSLoginViewController.swift */; };
+		76C64F502B26F0D1000E0108 /* SNSSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F4F2B26F0D1000E0108 /* SNSSignUpViewController.swift */; };
+		76C64F532B26F10B000E0108 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F522B26F10B000E0108 /* PrimaryButton.swift */; };
+		76C64F562B26F2D8000E0108 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F552B26F2D8000E0108 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		76C64F352B26EFA8000E0108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76C64F382B26EFA8000E0108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76C64F3A2B26EFA8000E0108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76C64F4D2B26F0C7000E0108 /* SNSLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSLoginViewController.swift; sourceTree = "<group>"; };
+		76C64F4F2B26F0D1000E0108 /* SNSSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSignUpViewController.swift; sourceTree = "<group>"; };
+		76C64F522B26F10B000E0108 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		76C64F552B26F2D8000E0108 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +72,50 @@
 		76C64F2B2B26EFA6000E0108 /* SNSLogin */ = {
 			isa = PBXGroup;
 			children = (
-				76C64F2C2B26EFA6000E0108 /* AppDelegate.swift */,
-				76C64F2E2B26EFA6000E0108 /* SceneDelegate.swift */,
-				76C64F302B26EFA6000E0108 /* ViewController.swift */,
-				76C64F352B26EFA8000E0108 /* Assets.xcassets */,
-				76C64F372B26EFA8000E0108 /* LaunchScreen.storyboard */,
+				76C64F582B26F480000E0108 /* Support */,
+				76C64F572B26F46D000E0108 /* Screens */,
+				76C64F542B26F2C6000E0108 /* Helper */,
+				76C64F512B26F0EE000E0108 /* CustomViews */,
 				76C64F3A2B26EFA8000E0108 /* Info.plist */,
 			);
 			path = SNSLogin;
+			sourceTree = "<group>";
+		};
+		76C64F512B26F0EE000E0108 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				76C64F522B26F10B000E0108 /* PrimaryButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		76C64F542B26F2C6000E0108 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				76C64F552B26F2D8000E0108 /* UIView+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		76C64F572B26F46D000E0108 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				76C64F302B26EFA6000E0108 /* ViewController.swift */,
+				76C64F4D2B26F0C7000E0108 /* SNSLoginViewController.swift */,
+				76C64F4F2B26F0D1000E0108 /* SNSSignUpViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		76C64F582B26F480000E0108 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				76C64F2C2B26EFA6000E0108 /* AppDelegate.swift */,
+				76C64F2E2B26EFA6000E0108 /* SceneDelegate.swift */,
+				76C64F352B26EFA8000E0108 /* Assets.xcassets */,
+				76C64F372B26EFA8000E0108 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C64F532B26F10B000E0108 /* PrimaryButton.swift in Sources */,
+				76C64F562B26F2D8000E0108 /* UIView+Extension.swift in Sources */,
 				76C64F312B26EFA6000E0108 /* ViewController.swift in Sources */,
 				76C64F2D2B26EFA6000E0108 /* AppDelegate.swift in Sources */,
 				76C64F2F2B26EFA6000E0108 /* SceneDelegate.swift in Sources */,
+				76C64F502B26F0D1000E0108 /* SNSSignUpViewController.swift in Sources */,
+				76C64F4E2B26F0C7000E0108 /* SNSLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
