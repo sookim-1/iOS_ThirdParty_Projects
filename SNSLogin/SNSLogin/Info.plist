@@ -2,13 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CustomConfigurations</key>
-	<dict>
-		<key>kakaoAPIkey</key>
-		<string>$(KAKAO_NATIVE_APP_KEY)</string>
-		<key>baseURL</key>
-		<string>$(BASE_URL)</string>
-	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -19,10 +12,37 @@
 				<string>kakao$(KAKAO_NATIVE_APP_KEY)</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>$(NAVER_APP_URL_SCHEME)</string>
+			</array>
+		</dict>
 	</array>
+	<key>CustomConfigurations</key>
+	<dict>
+		<key>baseURL</key>
+		<string>$(BASE_URL)</string>
+		<key>kakaoAPIkey</key>
+		<string>$(KAKAO_NATIVE_APP_KEY)</string>
+		<key>naverAppName</key>
+		<string>$(NAVER_SERVICE_APP_NAME)</string>
+		<key>naverAppURLScheme</key>
+		<string>$(NAVER_APP_URL_SCHEME)</string>
+		<key>naverConsumerKey</key>
+		<string>$(NAVER_CONSUMER_KEY)</string>
+		<key>naverConsumerSecret</key>
+		<string>$(NAVER_CONSUMER_SECRET)</string>
+	</dict>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>kakaokompassauth</string>
+		<string>naversearchapp</string>
+		<string>naversearchthirdlogin</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -14,6 +14,7 @@
 		762592172B270500007579EA /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = 762592162B270500007579EA /* KakaoSDKCertCore */; };
 		762592192B270500007579EA /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 762592182B270500007579EA /* KakaoSDKCommon */; };
 		7625921D2B27F8D7007579EA /* SNSConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625921C2B27F8D7007579EA /* SNSConfigurations.swift */; };
+		762592602B283EAB007579EA /* Pods_SNSLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7326332366CF23B932D7AB4 /* Pods_SNSLogin.framework */; };
 		76C64F2D2B26EFA6000E0108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F2C2B26EFA6000E0108 /* AppDelegate.swift */; };
 		76C64F2F2B26EFA6000E0108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F2E2B26EFA6000E0108 /* SceneDelegate.swift */; };
 		76C64F312B26EFA6000E0108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F302B26EFA6000E0108 /* ViewController.swift */; };
@@ -45,6 +46,9 @@
 		76C64F4F2B26F0D1000E0108 /* SNSSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSSignUpViewController.swift; sourceTree = "<group>"; };
 		76C64F522B26F10B000E0108 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		76C64F552B26F2D8000E0108 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		8E3318F5FB569A4CE4580A52 /* Pods-SNSLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLogin.debug.xcconfig"; path = "Target Support Files/Pods-SNSLogin/Pods-SNSLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		A7326332366CF23B932D7AB4 /* Pods_SNSLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AC7608590ED5DED7F1BE5C /* Pods-SNSLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSLogin.release.xcconfig"; path = "Target Support Files/Pods-SNSLogin/Pods-SNSLogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 				762592152B270500007579EA /* KakaoSDKCert in Frameworks */,
 				76C64F4C2B26EFFE000E0108 /* RxSwift in Frameworks */,
 				76C64F4A2B26EFFE000E0108 /* RxRelay in Frameworks */,
+				762592602B283EAB007579EA /* Pods_SNSLogin.framework in Frameworks */,
 				76C64F452B26EFC8000E0108 /* SnapKit in Frameworks */,
 				762592112B270500007579EA /* KakaoSDK in Frameworks */,
 				762592192B270500007579EA /* KakaoSDKCommon in Frameworks */,
@@ -68,6 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26ACDE251F5AD537FC17B6CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E3318F5FB569A4CE4580A52 /* Pods-SNSLogin.debug.xcconfig */,
+				F0AC7608590ED5DED7F1BE5C /* Pods-SNSLogin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		72E14ABC1E63061466CAF4ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7326332366CF23B932D7AB4 /* Pods_SNSLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7625921B2B27F8C2007579EA /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 			children = (
 				76C64F2B2B26EFA6000E0108 /* SNSLogin */,
 				76C64F2A2B26EFA6000E0108 /* Products */,
+				26ACDE251F5AD537FC17B6CB /* Pods */,
+				72E14ABC1E63061466CAF4ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76C64F3D2B26EFA8000E0108 /* Build configuration list for PBXNativeTarget "SNSLogin" */;
 			buildPhases = (
+				CC855C458E9451499D3513CE /* [CP] Check Pods Manifest.lock */,
 				76C64F252B26EFA6000E0108 /* Sources */,
 				76C64F262B26EFA6000E0108 /* Frameworks */,
 				76C64F272B26EFA6000E0108 /* Resources */,
+				CD119404F9B28A1740840AF5 /* [CP] Embed Pods Frameworks */,
+				762592652B284054007579EA /* NaverLogin */,
 			);
 			buildRules = (
 			);
@@ -227,6 +254,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		762592652B284054007579EA /* NaverLogin */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = NaverLogin;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 프로젝트 루트 디렉토리에 대한 상대 경로 정의\nPROJECT_DIR=\"${SRCROOT}\"\n\n# 경로 정의\nCONFIG_FILE=\"${PROJECT_DIR}/SNSLogin/APIKeyConfig.xcconfig\"\n\n# 기본 헤더\nHEADER_PATH=\"${PROJECT_DIR}/Pods/naveridlogin-sdk-ios/NaverThirdPartyLogin.xcframework/ios-arm64/NaverThirdPartyLogin.framework/Headers\"\nHEADER_FILE=\"$HEADER_PATH/NaverThirdPartyConstantsForApp.h\"\n\n# intel 헤더\nHEADER_PATH_INTEL=\"${PROJECT_DIR}/Pods/naveridlogin-sdk-ios/NaverThirdPartyLogin.xcframework/ios-arm64_x86_64-simulator/NaverThirdPartyLogin.framework/Headers\"\nHEADER_FILE_INTEL=\"$HEADER_PATH_INTEL/NaverThirdPartyConstantsForApp.h\"\n\n# .xcconfig 변수 추출\nif [ -f \"$CONFIG_FILE\" ]; then\n    eval \"$(grep -v '^#' \"$CONFIG_FILE\" | xargs -I {} echo export '{}')\"\nelse\n    echo \"Error: Config file not found at path: $CONFIG_FILE\"\n    exit 1\nfi\n\n# HEADER_FILE 찾기\nif [ ! -f \"$HEADER_FILE\" ]; then\n    echo \"Error: Header file not found at path: $HEADER_FILE\"\n    exit 1\nfi\n\n# HEADER_FILE Intel 찾기\nif [ ! -f \"$HEADER_FILE_INTEL\" ]; then\n    echo \"Error: Header file not found at path: $HEADER_FILE_INTEL\"\n    exit 1\nfi\n\n# HEADER_FILE 변수 대체\nsed -i '' \"s/kServiceAppUrlScheme    @\\\"[^\\\"]*\\\"/kServiceAppUrlScheme    @\\\"$NAVER_APP_URL_SCHEME\\\"/g\" \"$HEADER_FILE\"\nsed -i '' \"s/kConsumerKey            @\\\"[^\\\"]*\\\"/kConsumerKey            @\\\"$NAVER_CONSUMER_KEY\\\"/g\" \"$HEADER_FILE\"\nsed -i '' \"s/kConsumerSecret         @\\\"[^\\\"]*\\\"/kConsumerSecret         @\\\"$NAVER_CONSUMER_SECRET\\\"/g\" \"$HEADER_FILE\"\nsed -i '' \"s/kServiceAppName         @\\\"[^\\\"]*\\\"/kServiceAppName         @\\\"$NAVER_SERVICE_APP_NAME\\\"/g\" \"$HEADER_FILE\"\n\n# HEADER_FILE Intel 변수 대체\nsed -i '' \"s/kServiceAppUrlScheme    @\\\"[^\\\"]*\\\"/kServiceAppUrlScheme    @\\\"$NAVER_APP_URL_SCHEME\\\"/g\" \"$HEADER_FILE_INTEL\"\nsed -i '' \"s/kConsumerKey            @\\\"[^\\\"]*\\\"/kConsumerKey            @\\\"$NAVER_CONSUMER_KEY\\\"/g\" \"$HEADER_FILE_INTEL\"\nsed -i '' \"s/kConsumerSecret         @\\\"[^\\\"]*\\\"/kConsumerSecret         @\\\"$NAVER_CONSUMER_SECRET\\\"/g\" \"$HEADER_FILE_INTEL\"\nsed -i '' \"s/kServiceAppName         @\\\"[^\\\"]*\\\"/kServiceAppName         @\\\"$NAVER_SERVICE_APP_NAME\\\"/g\" \"$HEADER_FILE_INTEL\"\n";
+		};
+		CC855C458E9451499D3513CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD119404F9B28A1740840AF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSLogin/Pods-SNSLogin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSLogin/Pods-SNSLogin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNSLogin/Pods-SNSLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76C64F252B26EFA6000E0108 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,7 +382,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -358,7 +445,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -379,7 +466,7 @@
 		};
 		76C64F3E2B26EFA8000E0108 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */;
+			baseConfigurationReference = 8E3318F5FB569A4CE4580A52 /* Pods-SNSLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -406,7 +493,7 @@
 		};
 		76C64F3F2B26EFA8000E0108 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */;
+			baseConfigurationReference = F0AC7608590ED5DED7F1BE5C /* Pods-SNSLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

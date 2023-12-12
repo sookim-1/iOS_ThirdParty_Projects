@@ -12,6 +12,10 @@ final class SNSConfigurations {
     enum Key: String {
         case kakaoAPIkey = "kakaoAPIkey"
         case baseURL = "baseURL"
+        case naverAppURLScheme = "naverAppURLScheme"
+        case naverConsumerKey = "naverConsumerKey"
+        case naverConsumerSecret = "naverConsumerSecret"
+        case naverAppName = "naverAppName"
     }
 
     static func getValueFor(_ key: Key) -> String {

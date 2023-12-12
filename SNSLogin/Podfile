@@ -1,0 +1,32 @@
+# Podfile
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SNSLogin' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SNSLogin
+  pod 'naveridlogin-sdk-ios'
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        # CocoaPods가 생성한 xcconfig 파일의 실제 경로를 찾습니다.
+        xcconfig_path = config.base_configuration_reference.real_path
+
+        # 사용자 지정 xcconfig 파일에 대한 상대 경로를 설정합니다.
+        # 이 경로는 CocoaPods의 xcconfig 파일이 위치한 곳에서 시작하는 상대 경로여야 합니다.
+        custom_xcconfig_relative_path = File.join('..', '..', '..', 'SNSLogin', 'APIKeyConfig.xcconfig')
+
+        # CocoaPods가 생성한 xcconfig 파일을 읽고, 사용자 지정 xcconfig 파일을 참조하도록 합니다.
+        xcconfig_string = File.read(xcconfig_path)
+        xcconfig_string << "\n#include \"#{custom_xcconfig_relative_path}\""
+        File.open(xcconfig_path, "w") { |file| file.write(xcconfig_string) }
+      end
+    end
+  end
+end
