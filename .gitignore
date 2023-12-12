@@ -290,3 +290,6 @@ Session.vim
 .netrwhist
 # auto-generated tag files
 tags
+
+SNSLogin/SNSLogin/APIKey.swift
+SNSLogin/SNSLogin/APIKeyConfig.xcconfig

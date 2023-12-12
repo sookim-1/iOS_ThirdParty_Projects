@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7625920E2B2701BD007579EA /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625920D2B2701BD007579EA /* SuccessViewController.swift */; };
+		762592112B270500007579EA /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 762592102B270500007579EA /* KakaoSDK */; };
+		762592132B270500007579EA /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 762592122B270500007579EA /* KakaoSDKAuth */; };
+		762592152B270500007579EA /* KakaoSDKCert in Frameworks */ = {isa = PBXBuildFile; productRef = 762592142B270500007579EA /* KakaoSDKCert */; };
+		762592172B270500007579EA /* KakaoSDKCertCore in Frameworks */ = {isa = PBXBuildFile; productRef = 762592162B270500007579EA /* KakaoSDKCertCore */; };
+		762592192B270500007579EA /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 762592182B270500007579EA /* KakaoSDKCommon */; };
+		7625921D2B27F8D7007579EA /* SNSConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7625921C2B27F8D7007579EA /* SNSConfigurations.swift */; };
 		76C64F2D2B26EFA6000E0108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F2C2B26EFA6000E0108 /* AppDelegate.swift */; };
 		76C64F2F2B26EFA6000E0108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F2E2B26EFA6000E0108 /* SceneDelegate.swift */; };
 		76C64F312B26EFA6000E0108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C64F302B26EFA6000E0108 /* ViewController.swift */; };
@@ -24,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKeyConfig.xcconfig; sourceTree = "<group>"; };
+		7625920D2B2701BD007579EA /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		7625921C2B27F8D7007579EA /* SNSConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSConfigurations.swift; sourceTree = "<group>"; };
 		76C64F292B26EFA6000E0108 /* SNSLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C64F2C2B26EFA6000E0108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76C64F2E2B26EFA6000E0108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,17 +52,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762592132B270500007579EA /* KakaoSDKAuth in Frameworks */,
 				76C64F482B26EFFE000E0108 /* RxCocoa in Frameworks */,
 				76C64F422B26EFBD000E0108 /* Then in Frameworks */,
+				762592152B270500007579EA /* KakaoSDKCert in Frameworks */,
 				76C64F4C2B26EFFE000E0108 /* RxSwift in Frameworks */,
 				76C64F4A2B26EFFE000E0108 /* RxRelay in Frameworks */,
 				76C64F452B26EFC8000E0108 /* SnapKit in Frameworks */,
+				762592112B270500007579EA /* KakaoSDK in Frameworks */,
+				762592192B270500007579EA /* KakaoSDKCommon in Frameworks */,
+				762592172B270500007579EA /* KakaoSDKCertCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7625921B2B27F8C2007579EA /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				7625921C2B27F8D7007579EA /* SNSConfigurations.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
 		76C64F202B26EFA6000E0108 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +100,8 @@
 				76C64F542B26F2C6000E0108 /* Helper */,
 				76C64F512B26F0EE000E0108 /* CustomViews */,
 				76C64F3A2B26EFA8000E0108 /* Info.plist */,
+				7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */,
+				7625921B2B27F8C2007579EA /* Configurations */,
 			);
 			path = SNSLogin;
 			sourceTree = "<group>";
@@ -103,6 +128,7 @@
 				76C64F302B26EFA6000E0108 /* ViewController.swift */,
 				76C64F4D2B26F0C7000E0108 /* SNSLoginViewController.swift */,
 				76C64F4F2B26F0D1000E0108 /* SNSSignUpViewController.swift */,
+				7625920D2B2701BD007579EA /* SuccessViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -140,6 +166,11 @@
 				76C64F472B26EFFE000E0108 /* RxCocoa */,
 				76C64F492B26EFFE000E0108 /* RxRelay */,
 				76C64F4B2B26EFFE000E0108 /* RxSwift */,
+				762592102B270500007579EA /* KakaoSDK */,
+				762592122B270500007579EA /* KakaoSDKAuth */,
+				762592142B270500007579EA /* KakaoSDKCert */,
+				762592162B270500007579EA /* KakaoSDKCertCore */,
+				762592182B270500007579EA /* KakaoSDKCommon */,
 			);
 			productName = SNSLogin;
 			productReference = 76C64F292B26EFA6000E0108 /* SNSLogin.app */;
@@ -173,6 +204,7 @@
 				76C64F402B26EFBD000E0108 /* XCRemoteSwiftPackageReference "Then" */,
 				76C64F432B26EFC8000E0108 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				76C64F462B26EFFE000E0108 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = 76C64F2A2B26EFA6000E0108 /* Products */;
 			projectDirPath = "";
@@ -201,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C64F532B26F10B000E0108 /* PrimaryButton.swift in Sources */,
+				7625920E2B2701BD007579EA /* SuccessViewController.swift in Sources */,
 				76C64F562B26F2D8000E0108 /* UIView+Extension.swift in Sources */,
 				76C64F312B26EFA6000E0108 /* ViewController.swift in Sources */,
+				7625921D2B27F8D7007579EA /* SNSConfigurations.swift in Sources */,
 				76C64F2D2B26EFA6000E0108 /* AppDelegate.swift in Sources */,
 				76C64F2F2B26EFA6000E0108 /* SceneDelegate.swift in Sources */,
 				76C64F502B26F0D1000E0108 /* SNSSignUpViewController.swift in Sources */,
@@ -345,6 +379,7 @@
 		};
 		76C64F3E2B26EFA8000E0108 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,8 +390,7 @@
 				INFOPLIST_FILE = SNSLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +406,7 @@
 		};
 		76C64F3F2B26EFA8000E0108 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7625920B2B2700DF007579EA /* APIKeyConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,8 +417,7 @@
 				INFOPLIST_FILE = SNSLogin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +455,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		76C64F402B26EFBD000E0108 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then.git";
@@ -448,6 +490,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		762592102B270500007579EA /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		762592122B270500007579EA /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		762592142B270500007579EA /* KakaoSDKCert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCert;
+		};
+		762592162B270500007579EA /* KakaoSDKCertCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCertCore;
+		};
+		762592182B270500007579EA /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7625920F2B270500007579EA /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
 		76C64F412B26EFBD000E0108 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 76C64F402B26EFBD000E0108 /* XCRemoteSwiftPackageReference "Then" */;
